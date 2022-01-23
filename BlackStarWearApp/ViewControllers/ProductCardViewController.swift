@@ -23,7 +23,7 @@ class ProductCardViewController: UIViewController {
     var recomendedImageGalleryView = RecomendedImageGalleryView()
     
     var product = ProductModel()
-    var recomendetProducts = ProductDictItem()
+    var recomendedProducts = ProductDictItem()
     private var cartModel = CartItemModel()
 
     override func viewDidLoad() {
@@ -42,7 +42,7 @@ class ProductCardViewController: UIViewController {
         priceLabel.text = remove0AfterDot(productPrice: product.price ?? "0") + " руб."
         colorLabel.text = product.colorName
         descriptionLabel.text = product.productDescription
-        recomendedImageGalleryView.setupRecomendedGallery(recomendetProducts)
+        recomendedImageGalleryView.setupRecomendedGallery(recomendedProducts)
     }
     
     func productToCart() {

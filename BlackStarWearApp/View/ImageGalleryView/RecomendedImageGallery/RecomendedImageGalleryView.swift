@@ -74,7 +74,7 @@ extension RecomendedImageGalleryView: UICollectionViewDataSource,
     }
     
     // MARK: - Setup RecomendedGallery
-    func setupRecomendedGallery(_ recomendetProducts: ProductDictItem) {
+    func setupRecomendedGallery(_ recomendedProducts: ProductDictItem){
         vc?.contentView.addSubview(self)
         
         self.leadingAnchor.constraint(equalTo: (vc?.recomendedProductsView.leadingAnchor)!).isActive = true
@@ -82,12 +82,12 @@ extension RecomendedImageGalleryView: UICollectionViewDataSource,
         self.topAnchor.constraint(equalTo: (vc?.recomendedProductsView.topAnchor)!).isActive = true
         self.bottomAnchor.constraint(equalTo: (vc?.recomendedProductsView.bottomAnchor)!).isActive = true
         
-        var recomendetProductsImages = [String]()
-        for item in recomendetProducts {
-            recomendetProductsImages.append(item.value.mainImage ?? "")
+        var recomendedProductsImages = [String]()
+        for item in recomendedProducts {
+            recomendedProductsImages.append(item.value.mainImage ?? "")
         }
         
-        self.images = recomendetProductsImages
+        self.images = recomendedProductsImages
         
         self.reloadData()
     }

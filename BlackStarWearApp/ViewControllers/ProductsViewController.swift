@@ -61,7 +61,7 @@ extension ProductsViewController: UICollectionViewDataSource, UICollectionViewDe
             // 2: success! Set its property
 //            controller.navTitle = arrSubcategories[indexPath.row].name
             controller.product = products.arrProducts[indexPath.row]
-            controller.recomendetProducts = setRecomendedProducts(index: indexPath.row)
+            controller.recomendedProducts = setRecomendedProducts(index: indexPath.row)
 
             // 3: now push it onto the navigation controller
 //            navigationController?.pushViewController(controller, animated: true)

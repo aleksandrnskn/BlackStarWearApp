@@ -15,7 +15,7 @@ class CategoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Categories"
+        title = "Категории"
         navigationItem.backButtonTitle = ""
         navigationItem.largeTitleDisplayMode = .always
         
